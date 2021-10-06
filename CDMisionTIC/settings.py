@@ -73,6 +73,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+AUTH_USER_MODEL = 'HVApp.User'
+
 ROOT_URLCONF = 'CDMisionTIC.urls'
 
 TEMPLATES = [
