@@ -1,12 +1,10 @@
 from django.db import models
+from .usuarios import User
 
 class HojaDeVida (models.Model):
-
-    id = models.BigAutoField(primary_key=True)
-    nombre = models.CharField(max_length= 20, unique = True)
-    apellido = models.CharField(max_length= 20)
+    id = models.AutoField(primary_key=True)
+    user = models.ForeignKey(User,related_name="HojaDeVida",on_delete=models.CASCADE)
     cedula = models.CharField(max_length= 12)
-    correo = models.EmailField(max_length= 100)
     Agnos_experiencia = models.CharField(max_length=3)
     profesion = models.CharField(max_length= 20) 
     descripcion = models.TextField()  
