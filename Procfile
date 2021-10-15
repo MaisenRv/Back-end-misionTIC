@@ -1,1 +1,1 @@
-web: gunicorn HVApp.wsgi
+web: gunicorn CDMisionTIC.wsgi
