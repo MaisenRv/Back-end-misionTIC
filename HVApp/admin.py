@@ -5,3 +5,5 @@ from HVApp.models.hojaDeVida import HojaDeVida
 # Register your models here.
 admin.site.register(User)
 admin.site.register(HojaDeVida)
+
+
